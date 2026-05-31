@@ -13,20 +13,10 @@ import sys
 from datetime import datetime, timezone
 
 # ============ CONFIGURACIÓN ============
-# URL de la API de Ace Stream (cambia si tienes otra)
 API_URL = "https://api.acestream.me/all?api_version=1.0&api_key=test_api_key"
-
-# URL base de tu reproductor Ace Stream local
-# GitHub Actions NO puede acceder a tu red local, así que ponemos la IP directamente
 ACE_STREAM_BASE = "http://192.168.1.141:6878/ace/getstream?id="
-
-# País por defecto si no se detecta
 DEFAULT_COUNTRY = "Desconocido"
-
-# Número máximo de canales a incluir
-MAX_CHANNELS = 500
-
-# Archivo de salida
+MAX_CHANNELS = 1000
 OUTPUT_FILE = "acestream_channels.m3u"
 
 
@@ -36,7 +26,10 @@ def detect_country(name):
     if not name:
         return DEFAULT_COUNTRY
     
-    upper = name.upper().strip()
+    if isinstance(name, list):
+        name = ' '.join([str(n) for n in name])
+    
+    upper = str(name).upper().strip()
     
     patterns = [
         (r'ESPA[ÑN]A|SPAIN', 'España'),
@@ -82,12 +75,27 @@ def detect_country(name):
         if re.search(pattern, upper):
             return country
     
-    # Buscar entre paréntesis
-    paren_match = re.search(r'\(([^)]+)\)', name)
+    paren_match = re.search(r'\(([^)]+)\)', str(name))
     if paren_match:
         return detect_country(paren_match.group(1))
     
     return DEFAULT_COUNTRY
+
+
+# ============ FUNCIÓN SEGURA PARA EXTRAER STRING ============
+def safe_str(value, default=''):
+    """Convierte cualquier valor a string de forma segura."""
+    if value is None:
+        return default
+    if isinstance(value, str):
+        return value.strip()
+    if isinstance(value, (list, tuple)):
+        # Si es lista, unir elementos que sean strings
+        strs = [str(v).strip() for v in value if v is not None]
+        return ' '.join(strs) if strs else default
+    if isinstance(value, (int, float)):
+        return str(value)
+    return str(value).strip()
 
 
 # ============ EXTRAER CANALES ============
@@ -98,20 +106,17 @@ def extract_channels(data):
     if isinstance(data, list):
         channels = data
     elif isinstance(data, dict):
-        # Buscar en claves comunes
         for key in ['channels', 'result', 'data', 'items', 'streams', 'list', 'response', 'content', 'results']:
             if isinstance(data.get(key), list) and len(data[key]) > 0:
                 channels = data[key]
                 break
         
-        # Si no encontró, buscar cualquier array
         if not channels:
             for key, value in data.items():
                 if isinstance(value, list) and len(value) > 0:
                     channels = value
                     break
         
-        # Buscar anidado
         if not channels:
             for key, value in data.items():
                 if isinstance(value, dict):
@@ -124,7 +129,7 @@ def extract_channels(data):
 
 
 def normalize_channel(ch):
-    """Normaliza un canal a formato estándar."""
+    """Normaliza un canal a formato estándar, manejando todos los tipos de datos."""
     name = ''
     hash_val = ''
     country = ''
@@ -139,13 +144,22 @@ def normalize_channel(ch):
             name = f"Stream {hash_val[:10]}..."
     
     elif isinstance(ch, dict):
-        name = ch.get('name') or ch.get('title') or ch.get('channel_name') or ch.get('label') or ch.get('description') or ''
-        hash_val = ch.get('hash') or ch.get('infohash') or ch.get('id') or ch.get('content_id') or ch.get('stream_id') or ch.get('magnet') or ''
-        country = ch.get('country') or ch.get('region') or ch.get('category') or ch.get('group') or ch.get('language') or ''
+        # NOMBRE: puede ser string o lista
+        name = safe_str(ch.get('name') or ch.get('title') or ch.get('channel_name') or 
+                        ch.get('label') or ch.get('description') or '')
+        
+        # HASH: siempre string
+        hash_val = safe_str(ch.get('hash') or ch.get('infohash') or ch.get('id') or 
+                            ch.get('content_id') or ch.get('stream_id') or ch.get('magnet') or '')
+        
+        # PAÍS: puede ser string, lista, o estar en diferentes campos
+        raw_country = ch.get('country') or ch.get('region') or ch.get('category') or ch.get('group') or ch.get('language') or ''
+        country = safe_str(raw_country)
         
         # Extraer hash de URL si existe
         if not hash_val and ch.get('url'):
-            match = re.search(r'[a-fA-F0-9]{40}', ch['url'])
+            url_str = safe_str(ch.get('url'))
+            match = re.search(r'[a-fA-F0-9]{40}', url_str)
             if match:
                 hash_val = match.group(0)
     
@@ -160,10 +174,11 @@ def normalize_channel(ch):
     if not country:
         country = detect_country(name)
     
+    # Asegurar que son strings limpias
     return {
-        'name': name.strip() or 'Sin nombre',
-        'hash': hash_val.strip() if hash_val else '',
-        'country': country.strip() or DEFAULT_COUNTRY
+        'name': safe_str(name) or 'Sin nombre',
+        'hash': safe_str(hash_val),
+        'country': safe_str(country) or DEFAULT_COUNTRY
     }
 
 
@@ -189,7 +204,7 @@ def generate_m3u(channels, output_file):
     
     sorted_countries = sorted(grouped.keys(), key=lambda c: (
         priority.index(c) if c in priority else 999,
-        c
+        c.lower()
     ))
     
     # Construir M3U
@@ -197,7 +212,7 @@ def generate_m3u(channels, output_file):
     m3u_lines.append(f'#PLAYLIST: Ace Stream Channels')
     m3u_lines.append(f'# Actualizado: {now}')
     m3u_lines.append(f'# Total canales: {total}')
-    m3u_lines.append(f'# Repositorio: https://github.com/tu-usuario/tu-repo')
+    m3u_lines.append(f'# API: {API_URL}')
     m3u_lines.append('')
     
     for country in sorted_countries:
@@ -210,8 +225,8 @@ def generate_m3u(channels, output_file):
         
         for ch in country_channels:
             url = f"{ACE_STREAM_BASE}{ch['hash']}" if ch['hash'] else ''
-            # EXTINF: duración(-1=live), atributos, nombre
-            m3u_lines.append(f'#EXTINF:-1 group-title="{ch["country"]}" tvg-id="{ch["hash"][:20]}" tvg-logo="" ,{ch["name"]}')
+            hash_short = ch['hash'][:20] if ch['hash'] else ''
+            m3u_lines.append(f'#EXTINF:-1 group-title="{ch["country"]}" tvg-id="{hash_short}",{ch["name"]}')
             m3u_lines.append(url)
             m3u_lines.append('')
     
@@ -235,7 +250,6 @@ def main():
         response = requests.get(API_URL, headers=headers, timeout=30)
         response.raise_for_status()
         
-        # Intentar parsear JSON
         try:
             data = response.json()
         except json.JSONDecodeError:
@@ -249,15 +263,26 @@ def main():
         
         if not raw_channels:
             print("⚠️  No se encontraron canales en la respuesta.")
-            print(f"   Claves disponibles: {list(data.keys()) if isinstance(data, dict) else 'N/A'}")
+            if isinstance(data, dict):
+                print(f"   Claves disponibles: {list(data.keys())}")
             sys.exit(1)
         
-        # Normalizar
+        # Normalizar con manejo de errores individual
         channels = []
-        for ch in raw_channels:
-            normalized = normalize_channel(ch)
-            if normalized['hash'] and len(normalized['hash']) >= 30:
-                channels.append(normalized)
+        errors = 0
+        for i, ch in enumerate(raw_channels):
+            try:
+                normalized = normalize_channel(ch)
+                if normalized['hash'] and len(normalized['hash']) >= 30:
+                    channels.append(normalized)
+            except Exception as e:
+                errors += 1
+                if errors <= 3:
+                    print(f"⚠️  Error normalizando canal #{i}: {e}")
+                    print(f"   Datos: {str(ch)[:200]}")
+        
+        if errors > 0:
+            print(f"⚠️  Total errores al normalizar: {errors}")
         
         print(f"✅ Canales válidos (con hash): {len(channels)}")
         
@@ -266,30 +291,35 @@ def main():
             channels = channels[:MAX_CHANNELS]
             print(f"⚠️  Limitado a {MAX_CHANNELS} canales")
         
+        if len(channels) == 0:
+            print("❌ No hay canales válidos después de normalizar")
+            sys.exit(1)
+        
         # Generar M3U
         total = generate_m3u(channels, OUTPUT_FILE)
         
-        # Mostrar resumen por país
+        # Resumen por país
         countries = {}
         for ch in channels:
             countries[ch['country']] = countries.get(ch['country'], 0) + 1
         
         print(f"\n📺 Archivo generado: {OUTPUT_FILE}")
         print(f"📈 Total canales: {total}")
-        print(f"\n🌍 Distribución por país:")
-        for country, count in sorted(countries.items(), key=lambda x: -x[1]):
+        print(f"\n🌍 Top 15 países:")
+        for country, count in sorted(countries.items(), key=lambda x: -x[1])[:15]:
             print(f"   {country}: {count}")
         
-        # Guardar metadata
+        # Metadata
         metadata = {
             'last_updated': datetime.now(timezone.utc).isoformat(),
             'total_channels': total,
             'api_url': API_URL,
-            'countries': countries
+            'errors': errors,
+            'top_countries': dict(sorted(countries.items(), key=lambda x: -x[1])[:20])
         }
         with open('metadata.json', 'w', encoding='utf-8') as f:
             json.dump(metadata, f, indent=2, ensure_ascii=False)
-        print(f"\n📝 Metadata guardada en metadata.json")
+        print(f"\n📝 Metadata guardada")
         
     except requests.exceptions.RequestException as e:
         print(f"❌ Error de conexión: {e}")
