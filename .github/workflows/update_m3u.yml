@@ -2,7 +2,6 @@ name: 🔄 Actualizar M3U de Ace Stream
 
 on:
   schedule:
-    # Cada hora (minuto 0)
     - cron: '0 * * * *'
   workflow_dispatch:
   push:
@@ -20,44 +19,34 @@ jobs:
       contents: write
     
     steps:
-      - name: 📥 Checkout del repositorio
+      - name: 📥 Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       - name: 🐍 Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
 
-      - name: 📦 Instalar dependencias
+      - name: 📦 Instalar requests
         run: pip install requests
 
-      - name: 🔄 Generar archivo M3U
+      - name: 🔄 Generar M3U
         run: python generate_m3u.py
 
-      - name: 📊 Verificar cambios
-        id: check_changes
+      - name: 📊 ¿Hay cambios?
+        id: changes
         run: |
           if [[ -n $(git status --porcelain) ]]; then
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "✅ Cambios detectados"
           else
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "ℹ️  Sin cambios"
           fi
 
       - name: 💾 Commit y push
-        if: steps.check_changes.outputs.changed == 'true'
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add acestream_channels.m3u metadata.json
-          git commit -m "🔄 Actualización - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "🔄 Update canales - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
-
-      - name: 📋 Resumen final
-        run: |
-          echo "📺 Archivo generado correctamente"
-          echo "🔗 URL: https://raw.githubusercontent.com/${{ github.repository }}/main/acestream_channels.m3u"
