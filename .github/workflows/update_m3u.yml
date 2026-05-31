@@ -1,0 +1,70 @@
+name: 🔄 Actualizar M3U de Ace Stream
+
+on:
+  schedule:
+    # Se ejecuta cada hora (puedes cambiarlo)
+    - cron: '0 * * * *'
+  # También permite ejecutarlo manualmente desde GitHub
+  workflow_dispatch:
+  # Se ejecuta al hacer push a main (útil para pruebas)
+  push:
+    branches:
+      - main
+    paths:
+      - 'generate_m3u.py'
+      - '.github/workflows/update_m3u.yml'
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Necesario para hacer commit y push
+    
+    steps:
+      - name: 📥 Checkout del repositorio
+        uses: actions/checkout@v4
+      
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: 📦 Instalar dependencias
+        run: |
+          pip install requests
+      
+      - name: 🔄 Generar archivo M3U
+        run: |
+          python generate_m3u.py
+      
+      - name: 📊 Verificar cambios
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Se detectaron cambios en los canales"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  Sin cambios, todo actualizado"
+          fi
+      
+      - name: 💾 Commit y push si hay cambios
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add acestream_channels.m3u metadata.json
+          git commit -m "🔄 Actualización automática de canales - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 📋 Mostrar resumen
+        run: |
+          echo "📺 Archivo M3U generado:"
+          echo "   - Canales totales: $(head -5 acestream_channels.m3u | grep 'Total' | cut -d: -f2)"
+          echo "   - Tamaño: $(du -h acestream_channels.m3u | cut -f1)"
+          echo ""
+          echo "🔗 URL raw para VLC:"
+          echo "   https://raw.githubusercontent.com/${{ github.repository }}/main/acestream_channels.m3u"
