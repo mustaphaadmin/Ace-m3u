@@ -1,6 +1,6 @@
 #EXTM3U
 #PLAYLIST: Ace Stream Channels
-# Actualizado: 2026-06-25 14:25:31 UTC
+# Actualizado: 2026-06-25 17:09:56 UTC
 # Total canales: 1000
 # API: https://api.acestream.me/all?api_version=1.0&api_key=test_api_key
 
@@ -9,23 +9,10 @@
 #EXTINF:-1 group-title="UK" tvg-id="3538699d0f82ab315ae4",Playboy UK
 http://192.168.1.141:6878/ace/getstream?id=3538699d0f82ab315ae4eb73170fad6f9c24cacb
 
-# ===== Brasil (1 canales) =====
-
-#EXTINF:-1 group-title="Brasil" tvg-id="731c6f57efadf04ab155",Brasil Oeste (MT)
-http://192.168.1.141:6878/ace/getstream?id=731c6f57efadf04ab155db7960053c1e86bd8cd9
-
-# ===== Europa (2 canales) =====
+# ===== Europa (1 canales) =====
 
 #EXTINF:-1 group-title="Europa" tvg-id="2835be1d45f51067386a",Brazzers TV Europe
 http://192.168.1.141:6878/ace/getstream?id=2835be1d45f51067386a031dbf6d586700515d5f
-
-#EXTINF:-1 group-title="Europa" tvg-id="d8643aae672cbf77db9b",CCTV4 Europe
-http://192.168.1.141:6878/ace/getstream?id=d8643aae672cbf77db9b3a2e1b0121df99445ad5
-
-# ===== Internacional (1 canales) =====
-
-#EXTINF:-1 group-title="Internacional" tvg-id="4d6fe1b163061f110e32",Музыка кино International
-http://192.168.1.141:6878/ace/getstream?id=4d6fe1b163061f110e32c65c1df53a61c0a8d95d
 
 # ===== ae (4 canales) =====
 
@@ -235,13 +222,19 @@ http://192.168.1.141:6878/ace/getstream?id=3f7fad6fc1137c12365ff33ceb55507350b49
 #EXTINF:-1 group-title="cl" tvg-id="b3d13c4608634fc30450",U Los Lagos
 http://192.168.1.141:6878/ace/getstream?id=b3d13c4608634fc30450bdbdad8c673dd6781174
 
-# ===== cn (14 canales) =====
+# ===== cn (16 canales) =====
 
 #EXTINF:-1 group-title="cn" tvg-id="256ce9ac6819d69a3fdc",上虞1新闻综合
 http://192.168.1.141:6878/ace/getstream?id=256ce9ac6819d69a3fdce5eb2c027d05a7dde5c3
 
+#EXTINF:-1 group-title="cn" tvg-id="76673443d10cb6fffb84",上虞3新商都
+http://192.168.1.141:6878/ace/getstream?id=76673443d10cb6fffb847204ae6a2c39648062b2
+
 #EXTINF:-1 group-title="cn" tvg-id="6b76bfe28a05af5e5789",余姚新闻综合
 http://192.168.1.141:6878/ace/getstream?id=6b76bfe28a05af5e57896f5e4424bae3c735d607
+
+#EXTINF:-1 group-title="cn" tvg-id="1dad9eb9d86f293b6a83",四平新闻综合
+http://192.168.1.141:6878/ace/getstream?id=1dad9eb9d86f293b6a83c16b119ceb3b42908223
 
 #EXTINF:-1 group-title="cn" tvg-id="2d9d6aabb092b21fc4e3",嵊州综合
 http://192.168.1.141:6878/ace/getstream?id=2d9d6aabb092b21fc4e3595b1bc0bf05acc563f3
@@ -278,6 +271,11 @@ http://192.168.1.141:6878/ace/getstream?id=dc653f7d9ed3f538640d2476768dffd03ec19
 
 #EXTINF:-1 group-title="cn" tvg-id="4bf667a5d168bd9ebfe7",集安综合频道
 http://192.168.1.141:6878/ace/getstream?id=4bf667a5d168bd9ebfe7958ad9b2819baaf4d4f5
+
+# ===== co (1 canales) =====
+
+#EXTINF:-1 group-title="co" tvg-id="103711d488bb17d681f7",Cali TV (Colombia)
+http://192.168.1.141:6878/ace/getstream?id=103711d488bb17d681f78fcb3f48ff1b349ad988
 
 # ===== cr (1 canales) =====
 
@@ -329,9 +327,6 @@ http://192.168.1.141:6878/ace/getstream?id=51aba262210dcea336693bfb47e3962261577
 
 #EXTINF:-1 group-title="de" tvg-id="c99dfc602c9192628a17",Baden TV
 http://192.168.1.141:6878/ace/getstream?id=c99dfc602c9192628a178b0dedb53d68a72f9c4d
-
-#EXTINF:-1 group-title="de" tvg-id="bf2e809e3d674ea6b674",Baden TV
-http://192.168.1.141:6878/ace/getstream?id=bf2e809e3d674ea6b6748e46d2062c50d71e7992
 
 #EXTINF:-1 group-title="de" tvg-id="a64aaebd6d28d6890104",BILD HD [DE]
 http://192.168.1.141:6878/ace/getstream?id=a64aaebd6d28d68901046b6400f5ae81ec45057d
@@ -642,6 +637,9 @@ http://192.168.1.141:6878/ace/getstream?id=2707b05c94cf5d582e8ff71d3b35f8d1219ad
 #EXTINF:-1 group-title="de" tvg-id="b0999d6facfbae2944b9",Sky Sport F1 [DE]
 http://192.168.1.141:6878/ace/getstream?id=b0999d6facfbae2944b9c7bba442eeea9cd9d4b2
 
+#EXTINF:-1 group-title="de" tvg-id="769777a873e3649a22ac",Sky Sport News [DE]
+http://192.168.1.141:6878/ace/getstream?id=769777a873e3649a22ac4482b19685c0fd1bfcf3
+
 #EXTINF:-1 group-title="de" tvg-id="b404e97691d1bf2bcecb",Spiegel Geschichte HD [DE]
 http://192.168.1.141:6878/ace/getstream?id=b404e97691d1bf2bcecba753755c709bfd9e89b0
 
@@ -711,58 +709,40 @@ http://192.168.1.141:6878/ace/getstream?id=60b17e540713c9d30ff28968aca0e4be7729e
 #EXTINF:-1 group-title="de" tvg-id="3f18289975bfcf2e68dc",ZDF NEO [DE]
 http://192.168.1.141:6878/ace/getstream?id=3f18289975bfcf2e68dc5293a6f94b360243dca1
 
-# ===== Desconocido (69 canales) =====
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="f9f765db14878279ee95",+24
-http://192.168.1.141:6878/ace/getstream?id=f9f765db14878279ee95a39c10b6d43b27ea8f16
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="a4fed407517f3cb0dabf",.Black
-http://192.168.1.141:6878/ace/getstream?id=a4fed407517f3cb0dabfe458dcef08bc61c7b0c9
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="7e196fa27167f89525ef",1TV HD
-http://192.168.1.141:6878/ace/getstream?id=7e196fa27167f89525ef15a74494b697af0a0761
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="989fdb83d7c27bd51e9c",5 канал UA
-http://192.168.1.141:6878/ace/getstream?id=989fdb83d7c27bd51e9ce60a54c5810d606ac350
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="a6469398dbcb9d693d28",Accion
-http://192.168.1.141:6878/ace/getstream?id=a6469398dbcb9d693d28bd3db548ae4e9b8a3afc
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="a7f390c37058d91e52a3",Altyn Asyr
-http://192.168.1.141:6878/ace/getstream?id=a7f390c37058d91e52a30bd212ef4e92969ba749
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="bba4745eeb87b41f09c0",Arirang
-http://192.168.1.141:6878/ace/getstream?id=bba4745eeb87b41f09c04d943b798548ba75bcdf
+# ===== Desconocido (53 canales) =====
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="6293239a836d1d8db881",Babes TV
 http://192.168.1.141:6878/ace/getstream?id=6293239a836d1d8db88100679bb5ed04966122a9
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="bd1a92ad0564503b92f9",Better Life Nature Channel (480p)
-http://192.168.1.141:6878/ace/getstream?id=bd1a92ad0564503b92f916251294cf765e6b7708
+#EXTINF:-1 group-title="Desconocido" tvg-id="050702a6580361bbf040",BBC World News
+http://192.168.1.141:6878/ace/getstream?id=050702a6580361bbf040fbb42f8004ab4f1b9211
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="74bdcf62f36d5bbbb359",Brics TV HD
-http://192.168.1.141:6878/ace/getstream?id=74bdcf62f36d5bbbb3597b49e3bb9aed4f060988
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="42e74d3cf6ce872fb2c9",Bridge TV Classic
-http://192.168.1.141:6878/ace/getstream?id=42e74d3cf6ce872fb2c9e7d58c42648240b63867
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="feb960d80aa26e827bbb",Canale 2 Altamura
-http://192.168.1.141:6878/ace/getstream?id=feb960d80aa26e827bbba88357af1754e24d37c0
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="62862be4bb5ba7a446c9",CT Sport HD
-http://192.168.1.141:6878/ace/getstream?id=62862be4bb5ba7a446c9aea7be72b9af05b03edd
+#EXTINF:-1 group-title="Desconocido" tvg-id="22b250ce7a16dce785b2",Canal Motor (720p)
+http://192.168.1.141:6878/ace/getstream?id=22b250ce7a16dce785b2e1ee6d4e13bdfa7354cc
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="162efd7572532d353fdc",DAZN 1 BAR FHD --> NEW ERA
 http://192.168.1.141:6878/ace/getstream?id=162efd7572532d353fdc1a79f0146574e9b7d8ec
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="3e332611b24e1e196702",DAZN EVENTOS 2 --> NEW ERA
-http://192.168.1.141:6878/ace/getstream?id=3e332611b24e1e196702a50396377585ae7205ea
+#EXTINF:-1 group-title="Desconocido" tvg-id="b8b9ecff6333547a6792",DAZN 1 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=b8b9ecff6333547a6792bcf450033e4a4296d8d8
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="db465a3577b263c4fe67",DAZN F1 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=db465a3577b263c4fe671b8c1337878034716348
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="e3762efb1b0db5bb7a08",DAZN F1 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=e3762efb1b0db5bb7a089973913bd9bdab12b454
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="e86b691a9cb2b39f1540",DAZN MOTOGP --> NEW ERA
 http://192.168.1.141:6878/ace/getstream?id=e86b691a9cb2b39f15402840860112ba4de6f7e3
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="9439a40c5e15d8ab2fb2",Deportes 1080 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
-http://192.168.1.141:6878/ace/getstream?id=9439a40c5e15d8ab2fb2fc47933bee58b02c72c1
+#EXTINF:-1 group-title="Desconocido" tvg-id="92d60f1e1b0a50790cec",Dazn Mundial 1 elcano.top https://x.com/ace_stream_ https://t.me/acestreamf1
+http://192.168.1.141:6878/ace/getstream?id=92d60f1e1b0a50790cec418bd115be01d274af64
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="7a46eec2eeeb9d50d4e3",Dazn Mundial 1 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
+http://192.168.1.141:6878/ace/getstream?id=7a46eec2eeeb9d50d4e3676e929941df91e126fd
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="3e9e39b6326b481ec98d",Dazn Mundial 2 elcano.top https://x.com/ace_stream_ https://t.me/acestreamf1
+http://192.168.1.141:6878/ace/getstream?id=3e9e39b6326b481ec98d62940054fb6c1f13f139
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="c1fe497467a5c4938eaa",Deportes 720 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
 http://192.168.1.141:6878/ace/getstream?id=c1fe497467a5c4938eaa9d5b1448d124e6bd75f6
@@ -772,9 +752,6 @@ http://192.168.1.141:6878/ace/getstream?id=23760dbb6d25557e1d204acdae7c81e3d1627
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="37b98f58703a014e56e9",Direct Sport 2 1080 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
 http://192.168.1.141:6878/ace/getstream?id=37b98f58703a014e56e993d9dd219ba6dd6a5ef9
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="c88509fd554d30102862",Discovery
-http://192.168.1.141:6878/ace/getstream?id=c88509fd554d301028625518bebf2376d01156e0
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="7b35a9bea4e81679e639",Dorcel TV HD
 http://192.168.1.141:6878/ace/getstream?id=7b35a9bea4e81679e63909373b67aa429e63a5ec
@@ -788,29 +765,32 @@ http://192.168.1.141:6878/ace/getstream?id=1ddb15a4787b351276a0e95fa2084c085fa80
 #EXTINF:-1 group-title="Desconocido" tvg-id="0363fe717803b7e9ec6a",Esport3 720 elcano.top https://x.com/ace_stream_ https://t.me/acestreamf1
 http://192.168.1.141:6878/ace/getstream?id=0363fe717803b7e9ec6af24f7293c7a41865277e
 
+#EXTINF:-1 group-title="Desconocido" tvg-id="7d4f8888acd26364f54a",EUROSPORT 1 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=7d4f8888acd26364f54a0011f20841e6c7beb942
+
 #EXTINF:-1 group-title="Desconocido" tvg-id="0a4cdd0edd85fbb7bc53",EUROSPORT 1 FHD --> NEW ERA
 http://192.168.1.141:6878/ace/getstream?id=0a4cdd0edd85fbb7bc53e23c6282e77d0d256450
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="f9376813d80edce63355",Eurosport 1 FR
-http://192.168.1.141:6878/ace/getstream?id=f9376813d80edce6335512656ee4461ad6c61263
+#EXTINF:-1 group-title="Desconocido" tvg-id="ad45f432c8430a8ee8a4",Eurosport 2
+http://192.168.1.141:6878/ace/getstream?id=ad45f432c8430a8ee8a4123be493a8445246b63d
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="4a67d5f9f7aba0f97358",Eurosport 1 HD
-http://192.168.1.141:6878/ace/getstream?id=4a67d5f9f7aba0f9735813f0034380cd48424671
+#EXTINF:-1 group-title="Desconocido" tvg-id="12dff45a2c819b49fd0a",Formula 1
+http://192.168.1.141:6878/ace/getstream?id=12dff45a2c819b49fd0a6a9a408a825875870bbd
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="39abd966d9ff255d1a1e",Extasy HD
-http://192.168.1.141:6878/ace/getstream?id=39abd966d9ff255d1a1e48436dfabd887eb48f96
+#EXTINF:-1 group-title="Desconocido" tvg-id="4572c00e7a1eabf1c431",La 1
+http://192.168.1.141:6878/ace/getstream?id=4572c00e7a1eabf1c4310e27e08a497e152569b7
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="bc6158354af8d5862feb",ITV HD
-http://192.168.1.141:6878/ace/getstream?id=bc6158354af8d5862feb54162aa24794cd8c59d3
+#EXTINF:-1 group-title="Desconocido" tvg-id="004ebd7ba41c8f0690fe",La 1 TVE elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
+http://192.168.1.141:6878/ace/getstream?id=004ebd7ba41c8f0690fe91ad0c2a3470471783aa
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="214af4f424d5c5407616",Leo TV
-http://192.168.1.141:6878/ace/getstream?id=214af4f424d5c54076164f39bc5b3da413e2aaa7
+#EXTINF:-1 group-title="Desconocido" tvg-id="eebed46bb5743f547732",M+ DEPORTES 2 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=eebed46bb5743f5477328f3fb50d23b6cb545a5b
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="6e7a2d48ce65904ae12f",Luxury
-http://192.168.1.141:6878/ace/getstream?id=6e7a2d48ce65904ae12f3ddf7ed72125c8bffc2f
+#EXTINF:-1 group-title="Desconocido" tvg-id="61d5feaf32bb48a1fa0e",M+ DEPORTES 2 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=61d5feaf32bb48a1fa0ee96a8fadd46c3c125f97
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="fb3a4f51897131777983",M+ Baloncesto 1080 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
-http://192.168.1.141:6878/ace/getstream?id=fb3a4f51897131777983e743a21296b4644570a6
+#EXTINF:-1 group-title="Desconocido" tvg-id="7ad759b60c00d7ab0fcb",M+ DEPORTES 6 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=7ad759b60c00d7ab0fcbe53ec8b70c97152b876e
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="9a3967b2716b4a6d65c6",M+ Golf 1080 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
 http://192.168.1.141:6878/ace/getstream?id=9a3967b2716b4a6d65c6e51f47723bbff60f25cb
@@ -818,38 +798,38 @@ http://192.168.1.141:6878/ace/getstream?id=9a3967b2716b4a6d65c6e51f47723bbff60f2
 #EXTINF:-1 group-title="Desconocido" tvg-id="8033b98a3b36be8bfd93",M+ Golf 2 1080 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
 http://192.168.1.141:6878/ace/getstream?id=8033b98a3b36be8bfd939efd880503ee5240109f
 
+#EXTINF:-1 group-title="Desconocido" tvg-id="7daa4368176694ca4ed4",M+ LaLiga 2 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=7daa4368176694ca4ed46f44f006b6181dbc6bd7
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="2c911e08952eeeb1f24a",M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=2c911e08952eeeb1f24ad4289fa1c495a086d8ec
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="86a071ecb6418de62c21",M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=86a071ecb6418de62c21ad3587e755e2cec330c9
+
 #EXTINF:-1 group-title="Desconocido" tvg-id="deab41fff6f3ccbfa61b",M+ LIGA DE CAMPEONES FHD (1 opcion) --> NEW ERA
 http://192.168.1.141:6878/ace/getstream?id=deab41fff6f3ccbfa61b812b9bb108f3957d6e26
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="2613b59f12e6b7b76144",Movistar Documentales
-http://192.168.1.141:6878/ace/getstream?id=2613b59f12e6b7b7614411a07cdde5a20204ba4c
+#EXTINF:-1 group-title="Desconocido" tvg-id="b1ab6b68debdf5a4c3e6",M+ PLUS FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=b1ab6b68debdf5a4c3e6bbf726a421aba64ae240
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="aeb541f17ec1f647836f",Movistar Cine Español
+http://192.168.1.141:6878/ace/getstream?id=aeb541f17ec1f647836f8a0735b83328cf972d9d
+
+#EXTINF:-1 group-title="Desconocido" tvg-id="ab2c8d7b8e17b27ea864",MOVISTAR GOLF FHD --> NEW ERA
+http://192.168.1.141:6878/ace/getstream?id=ab2c8d7b8e17b27ea864465a3b510dfc11bd2d07
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="db69b3fd56f9beb8ddc3",NBA ESPN 1080 elcano.top https://x.com/ace_stream_ https://t.me/acestreamf1
 http://192.168.1.141:6878/ace/getstream?id=db69b3fd56f9beb8ddc3116cd647f5ab2eed5b71
 
+#EXTINF:-1 group-title="Desconocido" tvg-id="0e035355d70d4908406e",NBA ESPN 720 elcano.top https://x.com/ace_stream_ https://t.me/acestreamf1
+http://192.168.1.141:6878/ace/getstream?id=0e035355d70d4908406e056e390a8769ab2cd559
+
 #EXTINF:-1 group-title="Desconocido" tvg-id="f15e0baa7ee0b34adc5a",Onetoro TV 1080 elcano.top https://x.com/ace_stream_ https://t.me/acestreamf1
 http://192.168.1.141:6878/ace/getstream?id=f15e0baa7ee0b34adc5a259f57a5d7d82ea71ab7
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="76c9b8b65a48bd7facb2",Porn Asian
-http://192.168.1.141:6878/ace/getstream?id=76c9b8b65a48bd7facb21051fa619ac1284b4e71
-
 #EXTINF:-1 group-title="Desconocido" tvg-id="a54d96fa3381c74881b7",Porn Big Dick
 http://192.168.1.141:6878/ace/getstream?id=a54d96fa3381c74881b7b24165c7ce535a7de1e6
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="af78a9abcd5cfc80ca26",Porn Big Tits
-http://192.168.1.141:6878/ace/getstream?id=af78a9abcd5cfc80ca26b41173c663186220bf78
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="0cc713a2665a5b441def",Porn Blonde
-http://192.168.1.141:6878/ace/getstream?id=0cc713a2665a5b441def89bf5653aeca26b4be48
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="c6193b0d98e34358b8cc",Porn Blowjob
-http://192.168.1.141:6878/ace/getstream?id=c6193b0d98e34358b8cca87ea051d9de72b27a07
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="d526a92016174aba45d7",Porn Brunette
-http://192.168.1.141:6878/ace/getstream?id=d526a92016174aba45d7fac637688c621195f88e
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="4d5cdd73ca2e18d49dbb",Porn Classic
-http://192.168.1.141:6878/ace/getstream?id=4d5cdd73ca2e18d49dbb92fbe75611adde142d1b
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="6f0a7c42642832303fde",Porn Compilation
 http://192.168.1.141:6878/ace/getstream?id=6f0a7c42642832303fded07bfc5ea2cb96468793
@@ -857,29 +837,14 @@ http://192.168.1.141:6878/ace/getstream?id=6f0a7c42642832303fded07bfc5ea2cb96468
 #EXTINF:-1 group-title="Desconocido" tvg-id="d58b9ab0196c7e7cca99",Porn Cuckold
 http://192.168.1.141:6878/ace/getstream?id=d58b9ab0196c7e7cca993fc2cf9025502b23c1d0
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="cb4cbf3adb80692d9448",Porn Fetish
-http://192.168.1.141:6878/ace/getstream?id=cb4cbf3adb80692d94484e4c9b9e05fc67ac0603
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="665e2a6c67ce403fa085",Porn Gangbang
-http://192.168.1.141:6878/ace/getstream?id=665e2a6c67ce403fa085edbfe69d29fd7c036abd
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="22a1266f0a19cea8d0d2",Porn Latina
-http://192.168.1.141:6878/ace/getstream?id=22a1266f0a19cea8d0d22c3e7e91ac02a2ee71b9
+#EXTINF:-1 group-title="Desconocido" tvg-id="a8973d26820b406fd73b",Porn Interracial
+http://192.168.1.141:6878/ace/getstream?id=a8973d26820b406fd73bbb19a740a830913bd57f
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="ed2027ac0c93e143b3fd",Porn Milf
 http://192.168.1.141:6878/ace/getstream?id=ed2027ac0c93e143b3fdc68661ef71a17322ee83
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="b7a7b498e45ec9497b8b",Porn POV
-http://192.168.1.141:6878/ace/getstream?id=b7a7b498e45ec9497b8b471b2cdd53119a84a24c
-
 #EXTINF:-1 group-title="Desconocido" tvg-id="3f392e44b66e49bf6bf3",Porn Teen
 http://192.168.1.141:6878/ace/getstream?id=3f392e44b66e49bf6bf3230aebfa53725d3157e1
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="56005fc06d68d20f715f",Porn Threesome
-http://192.168.1.141:6878/ace/getstream?id=56005fc06d68d20f715f102bca40e13a73d498e8
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="9a93c0f28472925bd7d1",Reality Kings TV
-http://192.168.1.141:6878/ace/getstream?id=9a93c0f28472925bd7d12ff202d9f2f523522925
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="f868f78f045248dc1a57",RETRO TV | SD (CZ)
 http://192.168.1.141:6878/ace/getstream?id=f868f78f045248dc1a57fb8417afaa81369d8d54
@@ -896,29 +861,14 @@ http://192.168.1.141:6878/ace/getstream?id=1305c014cd0f7f836120e5918db4853492154
 #EXTINF:-1 group-title="Desconocido" tvg-id="e4b5f07bbfce16ad3f57",Tennis Channel 1080 elcano.top zeronet http://127.0.0.1:43110/18D6dPcsjLrjg2hhnYqKzNh2W6QtXrDwF/ https://ipfs.io/ipns/elcano.top
 http://192.168.1.141:6878/ace/getstream?id=e4b5f07bbfce16ad3f57a4cdf3210a9fa8785ff4
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="d3abf858b133c5aee62e",VIP Comedy HD
-http://192.168.1.141:6878/ace/getstream?id=d3abf858b133c5aee62e7e19db1cc52a201e417c
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="2432f7fba2875bf0c6e2",Мир HD
-http://192.168.1.141:6878/ace/getstream?id=2432f7fba2875bf0c6e273be8e14b333d5390db0
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="052a68adce5457d42988",НТВ HD
-http://192.168.1.141:6878/ace/getstream?id=052a68adce5457d4298854a8472ee31a017d9ef1
-
 #EXTINF:-1 group-title="Desconocido" tvg-id="70b326a20ed023c33561",НТВ HD
 http://192.168.1.141:6878/ace/getstream?id=70b326a20ed023c335618a7eedc7871be6110c62
 
 #EXTINF:-1 group-title="Desconocido" tvg-id="e8f879061af9baeed16a",Россия 1 HD
 http://192.168.1.141:6878/ace/getstream?id=e8f879061af9baeed16ac4e1e4207d9aa4cf348a
 
-#EXTINF:-1 group-title="Desconocido" tvg-id="7278cacf226493d4086c",Твоё ТВ
-http://192.168.1.141:6878/ace/getstream?id=7278cacf226493d4086ca8717a4b7314b08ff4fe
-
 #EXTINF:-1 group-title="Desconocido" tvg-id="6ca70fa4e297d7e42375",ТВЦ HD
 http://192.168.1.141:6878/ace/getstream?id=6ca70fa4e297d7e423750f512a44f47e25e761c6
-
-#EXTINF:-1 group-title="Desconocido" tvg-id="6ed8d14b9f8a4e8a0dc2",ფორმულა
-http://192.168.1.141:6878/ace/getstream?id=6ed8d14b9f8a4e8a0dc26ea8ae16031ebf145827
 
 # ===== do (1 canales) =====
 
@@ -930,19 +880,25 @@ http://192.168.1.141:6878/ace/getstream?id=cd8391737a8e8ccb94f7200da9e4a6e9e8aff
 #EXTINF:-1 group-title="eg" tvg-id="d63107c74665470a3163",Al Sharq
 http://192.168.1.141:6878/ace/getstream?id=d63107c74665470a31639411b07ebdbcabd75f2f
 
-# ===== es (23 canales) =====
+# ===== es (36 canales) =====
 
 #EXTINF:-1 group-title="es" tvg-id="69fb291c6204b5c84b56",24 HORAS Spain
 http://192.168.1.141:6878/ace/getstream?id=69fb291c6204b5c84b5696579a0c8a343829f1ff
 
+#EXTINF:-1 group-title="es" tvg-id="0c275618ee1208904bc4",ANTENA 3 Spain
+http://192.168.1.141:6878/ace/getstream?id=0c275618ee1208904bc4e7941a695903fb4f081a
+
+#EXTINF:-1 group-title="es" tvg-id="e075d960a5dc90c4aceb",AXN Movies Spain
+http://192.168.1.141:6878/ace/getstream?id=e075d960a5dc90c4acebe1b8060d8f29a525310b
+
 #EXTINF:-1 group-title="es" tvg-id="03c2e310714c5d56962d",Canal Málaga
 http://192.168.1.141:6878/ace/getstream?id=03c2e310714c5d56962d369f249cdfc862e8a3a1
 
-#EXTINF:-1 group-title="es" tvg-id="4fe8fd8a4b98499f784b",Canal Málaga
-http://192.168.1.141:6878/ace/getstream?id=4fe8fd8a4b98499f784bbb9a7b7b894109924067
-
 #EXTINF:-1 group-title="es" tvg-id="8a25653a2f774f4ae106",DAZN LaLiga
 http://192.168.1.141:6878/ace/getstream?id=8a25653a2f774f4ae1062d38a30dcd714d304a3a
+
+#EXTINF:-1 group-title="es" tvg-id="0560234787945a17522e",DAZN1
+http://192.168.1.141:6878/ace/getstream?id=0560234787945a17522e284c4c22bb4df29f33b0
 
 #EXTINF:-1 group-title="es" tvg-id="c93a0d4914713db942fb",DAZN2
 http://192.168.1.141:6878/ace/getstream?id=c93a0d4914713db942fbb210bac467b0224c63a6
@@ -956,6 +912,12 @@ http://192.168.1.141:6878/ace/getstream?id=ca43913e4a8f9c4391f328e68f0751c1f2fe4
 #EXTINF:-1 group-title="es" tvg-id="74d06a189ccc7a113bc1",Interalmería TV
 http://192.168.1.141:6878/ace/getstream?id=74d06a189ccc7a113bc17f1caf50e69e7564acd3
 
+#EXTINF:-1 group-title="es" tvg-id="481c1fb401bb4f4b35d2",LA 1 Spain
+http://192.168.1.141:6878/ace/getstream?id=481c1fb401bb4f4b35d272acbd4fedaf96c51aff
+
+#EXTINF:-1 group-title="es" tvg-id="28e3a4ee2f3d9876435c",M+ COMEDIA HD Spain
+http://192.168.1.141:6878/ace/getstream?id=28e3a4ee2f3d9876435c534a49e34e1a4ced0f12
+
 #EXTINF:-1 group-title="es" tvg-id="a52f0bf0a381275ccbd6",M+ Documentales HD Spain
 http://192.168.1.141:6878/ace/getstream?id=a52f0bf0a381275ccbd65988b803fe4e5930bef7
 
@@ -964,6 +926,9 @@ http://192.168.1.141:6878/ace/getstream?id=acc20f3739d9eccd0539f0c62519f35b8750a
 
 #EXTINF:-1 group-title="es" tvg-id="e10ef7d45baba0ec10a1",M+ Hits HD Spain
 http://192.168.1.141:6878/ace/getstream?id=e10ef7d45baba0ec10a1f237042dc633df947826
+
+#EXTINF:-1 group-title="es" tvg-id="060f90e77ec1f3478ef8",M+ Indie HD Spain
+http://192.168.1.141:6878/ace/getstream?id=060f90e77ec1f3478ef81b58569c0158b7851af5
 
 #EXTINF:-1 group-title="es" tvg-id="fcfe83e9b75169730fed",M+ Originales HD Spain
 http://192.168.1.141:6878/ace/getstream?id=fcfe83e9b75169730fedf7375127c0190443972e
@@ -974,11 +939,20 @@ http://192.168.1.141:6878/ace/getstream?id=3e38995391f980d060508c93ab1783cc4d7c4
 #EXTINF:-1 group-title="es" tvg-id="17ad42b190bd0327984e",M+ Terror HD Spain
 http://192.168.1.141:6878/ace/getstream?id=17ad42b190bd0327984ea7efee661564a61bfc5b
 
+#EXTINF:-1 group-title="es" tvg-id="a0fd9380808627dc9dd0",M. Deportes 2 HD
+http://192.168.1.141:6878/ace/getstream?id=a0fd9380808627dc9dd061348caa6065e7b6037a
+
 #EXTINF:-1 group-title="es" tvg-id="8bea71c9fea2605ee9f0",M. Deportes 3 HD
 http://192.168.1.141:6878/ace/getstream?id=8bea71c9fea2605ee9f0e06b2d3795a10662f223
 
 #EXTINF:-1 group-title="es" tvg-id="12bea597fc5075a07bec",M. Deportes 4 HD
 http://192.168.1.141:6878/ace/getstream?id=12bea597fc5075a07becfd34ba11dcad4f31a2c4
+
+#EXTINF:-1 group-title="es" tvg-id="123271cdd9cbabf1d13b",M. Deportes 5 HD
+http://192.168.1.141:6878/ace/getstream?id=123271cdd9cbabf1d13b42541a2c73c196d96eb8
+
+#EXTINF:-1 group-title="es" tvg-id="bc7dff93fc8c6eea22c4",M. Deportes 6 HD
+http://192.168.1.141:6878/ace/getstream?id=bc7dff93fc8c6eea22c4b12a453de265d63cd457
 
 #EXTINF:-1 group-title="es" tvg-id="8aba55f4f1f47def5444",M. Deportes HD
 http://192.168.1.141:6878/ace/getstream?id=8aba55f4f1f47def54447e845518109d797339e7
@@ -986,17 +960,32 @@ http://192.168.1.141:6878/ace/getstream?id=8aba55f4f1f47def54447e845518109d79733
 #EXTINF:-1 group-title="es" tvg-id="b715ba3d23d3dca6736a",M. Golf HD
 http://192.168.1.141:6878/ace/getstream?id=b715ba3d23d3dca6736ac86990efe105087c3401
 
-#EXTINF:-1 group-title="es" tvg-id="c1959a27edb0b94c5005",M. LaLiga
-http://192.168.1.141:6878/ace/getstream?id=c1959a27edb0b94c5005a2dea93b7a70d4312f1c
+#EXTINF:-1 group-title="es" tvg-id="83d43d89061d3790c1a9",M. LaLiga (disabled)
+http://192.168.1.141:6878/ace/getstream?id=83d43d89061d3790c1a9938a967ce8734a0bd6ce
+
+#EXTINF:-1 group-title="es" tvg-id="ece9d873508195d3cbb6",M. LaLiga 2
+http://192.168.1.141:6878/ace/getstream?id=ece9d873508195d3cbb61d4edd428b59f47a1541
 
 #EXTINF:-1 group-title="es" tvg-id="b24546262982de27283b",M. LaLiga 3
 http://192.168.1.141:6878/ace/getstream?id=b24546262982de27283bb378307bb427509ed814
 
+#EXTINF:-1 group-title="es" tvg-id="4406d0bf8ce6ff77e138",M. LaLiga 4
+http://192.168.1.141:6878/ace/getstream?id=4406d0bf8ce6ff77e13891a4e7a6e2fea124e4fb
+
 #EXTINF:-1 group-title="es" tvg-id="cc3d749cfd30877b418f",M. Liga de Campeones 2
 http://192.168.1.141:6878/ace/getstream?id=cc3d749cfd30877b418f1d59a80d9291e0f091c8
 
-#EXTINF:-1 group-title="es" tvg-id="bed9968cc0091f388b16",SYFY HD Spain
-http://192.168.1.141:6878/ace/getstream?id=bed9968cc0091f388b166773426550a178d3d684
+#EXTINF:-1 group-title="es" tvg-id="8cc8e3c092fa238bc0cb",M. Liga de Campeones 3
+http://192.168.1.141:6878/ace/getstream?id=8cc8e3c092fa238bc0cbc65382ae436131fc3eab
+
+#EXTINF:-1 group-title="es" tvg-id="2550ea6d32d3384dcc8a",M. Liga de Campeones 4
+http://192.168.1.141:6878/ace/getstream?id=2550ea6d32d3384dcc8ac149c711bceb70d4b005
+
+#EXTINF:-1 group-title="es" tvg-id="9f4168996090c3a0c2e8",NOVA Spain
+http://192.168.1.141:6878/ace/getstream?id=9f4168996090c3a0c2e8a8373b88991e30927d28
+
+#EXTINF:-1 group-title="es" tvg-id="f1edc5f73f4e489a607f",SkyShowtime 1 Spain
+http://192.168.1.141:6878/ace/getstream?id=f1edc5f73f4e489a607feb755695a2c2dff3f17f
 
 #EXTINF:-1 group-title="es" tvg-id="079f6ae202fb27fd6c47",TELEDEPORTE Spain
 http://192.168.1.141:6878/ace/getstream?id=079f6ae202fb27fd6c47657579eebd8453a2193d
@@ -1078,7 +1067,10 @@ http://192.168.1.141:6878/ace/getstream?id=8ac12c8d5899767bb1755949ca5449f105756
 #EXTINF:-1 group-title="ge" tvg-id="f0869c6e4bba2678d429",Palitra News
 http://192.168.1.141:6878/ace/getstream?id=f0869c6e4bba2678d42954044a96f196365893f5
 
-# ===== gr (2 canales) =====
+# ===== gr (3 canales) =====
+
+#EXTINF:-1 group-title="gr" tvg-id="6f117f9c42d032910e4b",Groovy Catch
+http://192.168.1.141:6878/ace/getstream?id=6f117f9c42d032910e4b1cacf7d0f4b24170e96f
 
 #EXTINF:-1 group-title="gr" tvg-id="cc5886fbf03ee0deb5fd",TV Creta
 http://192.168.1.141:6878/ace/getstream?id=cc5886fbf03ee0deb5fdfed4ae9cc10cbcb8db63
@@ -1094,16 +1086,13 @@ http://192.168.1.141:6878/ace/getstream?id=139a601bf7c2b97a87a6152ba410acc9642e2
 #EXTINF:-1 group-title="hu" tvg-id="ca4bb988adf99d5f3148",TV7 Bekescsaba
 http://192.168.1.141:6878/ace/getstream?id=ca4bb988adf99d5f3148b552e80be428039a7194
 
-# ===== id (3 canales) =====
-
-#EXTINF:-1 group-title="id" tvg-id="cde83f109c4b661a434e",CNBC Indonesia
-http://192.168.1.141:6878/ace/getstream?id=cde83f109c4b661a434e1316c0b602b13f106546
+# ===== id (2 canales) =====
 
 #EXTINF:-1 group-title="id" tvg-id="84303e3b3e653a29ca67",CNBC Indonesia
 http://192.168.1.141:6878/ace/getstream?id=84303e3b3e653a29ca67135da7defa02e5cbff34
 
-#EXTINF:-1 group-title="id" tvg-id="1f9789af12c44d9d35fd",TRANS TV HD
-http://192.168.1.141:6878/ace/getstream?id=1f9789af12c44d9d35fdcf4a63b2c748cc55e86b
+#EXTINF:-1 group-title="id" tvg-id="cde83f109c4b661a434e",CNBC Indonesia
+http://192.168.1.141:6878/ace/getstream?id=cde83f109c4b661a434e1316c0b602b13f106546
 
 # ===== il (20 canales) =====
 
@@ -1167,13 +1156,10 @@ http://192.168.1.141:6878/ace/getstream?id=715ab1e81125aeff1d8f80e55bd8e3c5f58ad
 #EXTINF:-1 group-title="il" tvg-id="62039fb516193ed3e750",yes KIDS HD
 http://192.168.1.141:6878/ace/getstream?id=62039fb516193ed3e750c44c42e9b075fb54a742
 
-# ===== in (6 canales) =====
+# ===== in (5 canales) =====
 
 #EXTINF:-1 group-title="in" tvg-id="6810bbec94844fc91b7e",AAJ TAK HD
 http://192.168.1.141:6878/ace/getstream?id=6810bbec94844fc91b7e437ab7995b96de3a76cd
-
-#EXTINF:-1 group-title="in" tvg-id="09d9277fabe7abd34c4d",Channel Win
-http://192.168.1.141:6878/ace/getstream?id=09d9277fabe7abd34c4d7f3e748898edf9bb2729
 
 #EXTINF:-1 group-title="in" tvg-id="ee14f5b26d6800ec35f9",EET TV
 http://192.168.1.141:6878/ace/getstream?id=ee14f5b26d6800ec35f9db6e35c3af2fc1f7396e
@@ -1209,9 +1195,6 @@ http://192.168.1.141:6878/ace/getstream?id=27dd2dc42643b48fe3af8be4f5f8d7b39418f
 
 #EXTINF:-1 group-title="int" tvg-id="b651f83b15c3c38616f7",Adult IPTV Brunette (18+)
 http://192.168.1.141:6878/ace/getstream?id=b651f83b15c3c38616f7f311906a7dc5fa778a4c
-
-#EXTINF:-1 group-title="int" tvg-id="e6193676b5d6e215306f",Adult IPTV Compilation (18+)
-http://192.168.1.141:6878/ace/getstream?id=e6193676b5d6e215306f2aa3dc7d5c72e658a539
 
 #EXTINF:-1 group-title="int" tvg-id="062bccf6aeb3022c2dd3",Adult IPTV Cuckold (18+)
 http://192.168.1.141:6878/ace/getstream?id=062bccf6aeb3022c2dd3584e6f47493035357241
@@ -1321,6 +1304,9 @@ http://192.168.1.141:6878/ace/getstream?id=a2d282926bcfe878d34a8be780435e72cd37d
 #EXTINF:-1 group-title="int" tvg-id="37e4eb89aec8b7635030",Swamiji TV
 http://192.168.1.141:6878/ace/getstream?id=37e4eb89aec8b7635030024c824e35514e7d68d7
 
+#EXTINF:-1 group-title="int" tvg-id="3687f85bb9823e4153cc",US: RED BULL TV (2+)
+http://192.168.1.141:6878/ace/getstream?id=3687f85bb9823e4153ccd1869c0f570420e156a9
+
 #EXTINF:-1 group-title="int" tvg-id="bcfda165bf5a32327e64",V2BEAT TV
 http://192.168.1.141:6878/ace/getstream?id=bcfda165bf5a32327e647f94a20f750fe643c7cb
 
@@ -1365,10 +1351,13 @@ http://192.168.1.141:6878/ace/getstream?id=6f1a46c561aa161defb1ae3aa7d201c4f6268
 #EXTINF:-1 group-title="ir us" tvg-id="8633d5bd26ee30d6d5e6",AF: PBC TAPESH TV
 http://192.168.1.141:6878/ace/getstream?id=8633d5bd26ee30d6d5e627505c52b53d430042c8
 
-# ===== it (26 canales) =====
+# ===== it (27 canales) =====
 
 #EXTINF:-1 group-title="it" tvg-id="e8589ce6a565d3499172",2 TV | SD (IT)
 http://192.168.1.141:6878/ace/getstream?id=e8589ce6a565d3499172425c29f714b7a869458f
+
+#EXTINF:-1 group-title="it" tvg-id="8271ed6cba5a61a4f2e3",Aurora Arte
+http://192.168.1.141:6878/ace/getstream?id=8271ed6cba5a61a4f2e3376870eec8aae6805dda
 
 #EXTINF:-1 group-title="it" tvg-id="6f0bb2f7aa50ad23b3fc",Canale 2 Altamura
 http://192.168.1.141:6878/ace/getstream?id=6f0bb2f7aa50ad23b3fc6aa00044a57e10c58c55
@@ -1497,11 +1486,6 @@ http://192.168.1.141:6878/ace/getstream?id=9f2f0428fe28ad1a6e98a99065fec82caf894
 #EXTINF:-1 group-title="mk" tvg-id="fa5a2d9ebe006d47d51d",Sky Folk TV
 http://192.168.1.141:6878/ace/getstream?id=fa5a2d9ebe006d47d51d776bf8117f3753e9198f
 
-# ===== mm (1 canales) =====
-
-#EXTINF:-1 group-title="mm" tvg-id="5a041df36bc12bee9c91",MWD Variety
-http://192.168.1.141:6878/ace/getstream?id=5a041df36bc12bee9c91c18c58ac178dae4bdefb
-
 # ===== mx (3 canales) =====
 
 #EXTINF:-1 group-title="mx" tvg-id="7c0f960fb7f65cd95281",Multimedios Mty
@@ -1526,7 +1510,7 @@ http://192.168.1.141:6878/ace/getstream?id=8e475c8b9f12270c524f88f5659cc6811fc13
 #EXTINF:-1 group-title="NL" tvg-id="fca28f51d5500d131770",Ziggo Sport 2
 http://192.168.1.141:6878/ace/getstream?id=fca28f51d5500d131770230b033c5da2b36ebf9c
 
-# ===== nl (9 canales) =====
+# ===== nl (8 canales) =====
 
 #EXTINF:-1 group-title="nl" tvg-id="d1ab7df17cbea53b38cc",BNR Nieuwsradio
 http://192.168.1.141:6878/ace/getstream?id=d1ab7df17cbea53b38cc02f3b0ee04465e6d13a4
@@ -1536,9 +1520,6 @@ http://192.168.1.141:6878/ace/getstream?id=7f5b39e13db20ee7ff189f6b01675acb37116
 
 #EXTINF:-1 group-title="nl" tvg-id="a2d831ff54c9fce79a13",Omroep Brabant Radio
 http://192.168.1.141:6878/ace/getstream?id=a2d831ff54c9fce79a13397894a16d0f91008d0c
-
-#EXTINF:-1 group-title="nl" tvg-id="5ab15bf2deb31f9e2b81",Omroep Brabant Radio
-http://192.168.1.141:6878/ace/getstream?id=5ab15bf2deb31f9e2b81b30d16380ce61303433d
 
 #EXTINF:-1 group-title="nl" tvg-id="25ee537ce82c68690238",Omroep Flevoland
 http://192.168.1.141:6878/ace/getstream?id=25ee537ce82c686902389db513d30b395bc7b14a
@@ -1565,7 +1546,7 @@ http://192.168.1.141:6878/ace/getstream?id=2080f08e250343763a31964a8057e2584b73f
 #EXTINF:-1 group-title="pk" tvg-id="d757bdd23eb84e243415",Zindagi TV
 http://192.168.1.141:6878/ace/getstream?id=d757bdd23eb84e2434151d1a204dd223a7de5bc2
 
-# ===== pl (129 canales) =====
+# ===== pl (130 canales) =====
 
 #EXTINF:-1 group-title="pl" tvg-id="8f92d328d2e5a8a83f04",13 Ulica [PL]
 http://192.168.1.141:6878/ace/getstream?id=8f92d328d2e5a8a83f04bd6f3da38bf48a37e375
@@ -1689,6 +1670,9 @@ http://192.168.1.141:6878/ace/getstream?id=a2a02182ab8fec713cbaf5a45d92c5cd5a499
 
 #EXTINF:-1 group-title="pl" tvg-id="a9fc65ae6e7b537f106c",Eurosport 2 HD [PL]
 http://192.168.1.141:6878/ace/getstream?id=a9fc65ae6e7b537f106c07471b7a66b2cbc87069
+
+#EXTINF:-1 group-title="pl" tvg-id="d74bdd567469ed170b67",Eurosport [PL]
+http://192.168.1.141:6878/ace/getstream?id=d74bdd567469ed170b670db8b8947061e964fb84
 
 #EXTINF:-1 group-title="pl" tvg-id="dab6702ce4c71a26db6f",Extreme Sports [PL]
 http://192.168.1.141:6878/ace/getstream?id=dab6702ce4c71a26db6f0bda262a3d4f34bb54e5
@@ -1954,7 +1938,10 @@ http://192.168.1.141:6878/ace/getstream?id=8d4bd60c0a785b7efc143a67f685b904603bf
 #EXTINF:-1 group-title="pl" tvg-id="f73aa26b7ab89d959e2a",WP [PL]
 http://192.168.1.141:6878/ace/getstream?id=f73aa26b7ab89d959e2a9c7f6793b725c7c51021
 
-# ===== qa (1 canales) =====
+# ===== qa (2 canales) =====
+
+#EXTINF:-1 group-title="qa" tvg-id="f528f19a03ad6bb1f218",Al Jazeera Arabic
+http://192.168.1.141:6878/ace/getstream?id=f528f19a03ad6bb1f21881a4c89b0af5e524d339
 
 #EXTINF:-1 group-title="qa" tvg-id="f4c5a8ad04adc45ec4b5",Al Jazeera Mubasher
 http://192.168.1.141:6878/ace/getstream?id=f4c5a8ad04adc45ec4b5a3cb9904e7ba55faf348
@@ -2165,17 +2152,11 @@ http://192.168.1.141:6878/ace/getstream?id=80b395de2f07983ac324d1160711487aefaa7
 #EXTINF:-1 group-title="ru" tvg-id="5e40d94899925654ba5b",FOX HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=5e40d94899925654ba5baf7f9ede7db5e0c10ad7
 
-#EXTINF:-1 group-title="ru" tvg-id="d8b7a3f67305d65d0c75",Fox Life HD [RU]
-http://192.168.1.141:6878/ace/getstream?id=d8b7a3f67305d65d0c75602eb7ec8e7f1df6b8b7
-
 #EXTINF:-1 group-title="ru" tvg-id="45b1c4b07917fd5d1cc1",Gulli Girl [RU]
 http://192.168.1.141:6878/ace/getstream?id=45b1c4b07917fd5d1cc10b55d376753593ed4a0a
 
 #EXTINF:-1 group-title="ru" tvg-id="259cb14a1a9178a6b3f8",H2 HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=259cb14a1a9178a6b3f8228b25c057e0f1463ce7
-
-#EXTINF:-1 group-title="ru" tvg-id="44ffb1bd04a4aa2df86b",HD Life [RU]
-http://192.168.1.141:6878/ace/getstream?id=44ffb1bd04a4aa2df86bbca0f29a714772a7abe1
 
 #EXTINF:-1 group-title="ru" tvg-id="4f7be698925e8df0bc33",History HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=4f7be698925e8df0bc338170a81c390d3cb391ae
@@ -2216,11 +2197,11 @@ http://192.168.1.141:6878/ace/getstream?id=626c5326f29984bbedceee04c9694a0447ba0
 #EXTINF:-1 group-title="ru" tvg-id="fded295edff9d57adb77",Setanta Live 2 [RU]
 http://192.168.1.141:6878/ace/getstream?id=fded295edff9d57adb77cf02a08c5f2fcb9e608b
 
+#EXTINF:-1 group-title="ru" tvg-id="8adf3a3dc4379137b05d",TiJi [RU]
+http://192.168.1.141:6878/ace/getstream?id=8adf3a3dc4379137b05d1fa340c5cc84283d7e72
+
 #EXTINF:-1 group-title="ru" tvg-id="cfa9d82af3e0853f5d46",Travel Channel HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=cfa9d82af3e0853f5d461fbb964aa4bddce7419b
-
-#EXTINF:-1 group-title="ru" tvg-id="6e96ec55341e3bf654d0",Travel+Adventure HD [RU]
-http://192.168.1.141:6878/ace/getstream?id=6e96ec55341e3bf654d0c9335fffb43f0a7e46a2
 
 #EXTINF:-1 group-title="ru" tvg-id="b2937e666b87952e13f2",TV1000 [RU]
 http://192.168.1.141:6878/ace/getstream?id=b2937e666b87952e13f299d9ee52bd77117f5ccb
@@ -2303,6 +2284,9 @@ http://192.168.1.141:6878/ace/getstream?id=07bd0745d9da1bfa4d7baad018595e5ca307e
 #EXTINF:-1 group-title="ru" tvg-id="db224b9e4979973e97a3",Глазами туриста HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=db224b9e4979973e97a389a62c8259388ec3207e
 
+#EXTINF:-1 group-title="ru" tvg-id="e06688954b01bd649f62",Диалоги о рыбалке [RU]
+http://192.168.1.141:6878/ace/getstream?id=e06688954b01bd649f62e385a190fa63bfe01d9f
+
 #EXTINF:-1 group-title="ru" tvg-id="fa7779232bdf287ba441",Дикий [RU]
 http://192.168.1.141:6878/ace/getstream?id=fa7779232bdf287ba44134ab1cc02a592ff9c698
 
@@ -2318,6 +2302,9 @@ http://192.168.1.141:6878/ace/getstream?id=22b73ed881efe130b4222b0168de8a0e8a299
 #EXTINF:-1 group-title="ru" tvg-id="1b86e011adec585107f7",Дом кино премиум HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=1b86e011adec585107f75423b7c5827f2ce0e460
 
+#EXTINF:-1 group-title="ru" tvg-id="ad5c09fb6b08bc1aefe4",Домашний [RU]
+http://192.168.1.141:6878/ace/getstream?id=ad5c09fb6b08bc1aefe4b6bf292c4db6a04f7700
+
 #EXTINF:-1 group-title="ru" tvg-id="7a19cd742fba7d89ffa4",Дорама [RU]
 http://192.168.1.141:6878/ace/getstream?id=7a19cd742fba7d89ffa491776c38b3008154df36
 
@@ -2326,9 +2313,6 @@ http://192.168.1.141:6878/ace/getstream?id=a98290bfa375a6f19b81d664e59da9bb0111d
 
 #EXTINF:-1 group-title="ru" tvg-id="00314f5387ad15fd701b",Душевное [RU]
 http://192.168.1.141:6878/ace/getstream?id=00314f5387ad15fd701ba7d2e9fdb7b4a286197d
-
-#EXTINF:-1 group-title="ru" tvg-id="7e47ad913e702f8586bc",Еврокино [RU]
-http://192.168.1.141:6878/ace/getstream?id=7e47ad913e702f8586bcdb0c4d97d3f96e8641c0
 
 #EXTINF:-1 group-title="ru" tvg-id="2c4cda7044f5390e0608",Еда Премиум HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=2c4cda7044f5390e060823dc25014eb23875c820
@@ -2381,9 +2365,6 @@ http://192.168.1.141:6878/ace/getstream?id=5254ec612b0bded26299560b4e51bd491bf97
 #EXTINF:-1 group-title="ru" tvg-id="9650f12d9a13248dc7ee",Киномикс [RU]
 http://192.168.1.141:6878/ace/getstream?id=9650f12d9a13248dc7ee4919eb208b0eff3c563a
 
-#EXTINF:-1 group-title="ru" tvg-id="403a3d7707586a263923",Кинопоказ HD [RU]
-http://192.168.1.141:6878/ace/getstream?id=403a3d7707586a2639237ea4d441cc029459524c
-
 #EXTINF:-1 group-title="ru" tvg-id="8eb2c2a4534bcbaa1873",Кинопремьера HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=8eb2c2a4534bcbaa1873e258e0fa4fcdad0dc05c
 
@@ -2422,6 +2403,9 @@ http://192.168.1.141:6878/ace/getstream?id=38c98858c0fc5e670820d2e1d308c71efcaa2
 
 #EXTINF:-1 group-title="ru" tvg-id="96131439dd8c6d935f9d",ЛДПР ТВ
 http://192.168.1.141:6878/ace/getstream?id=96131439dd8c6d935f9d4f0ad198fb1987b8b4f0
+
+#EXTINF:-1 group-title="ru" tvg-id="2d5d33c8c011603172bf",Любимое кино [RU]
+http://192.168.1.141:6878/ace/getstream?id=2d5d33c8c011603172bf9d778d6d77dcce6e0aca
 
 #EXTINF:-1 group-title="ru" tvg-id="9fb2a296420e6a33d1de",Ля-минор [RU]
 http://192.168.1.141:6878/ace/getstream?id=9fb2a296420e6a33d1de4e54611d7039d533a2b3
@@ -2504,12 +2488,6 @@ http://192.168.1.141:6878/ace/getstream?id=a604243282974cc912690555f96b1c80d1495
 #EXTINF:-1 group-title="ru" tvg-id="2344fa4304ac860f6469",Наш Кинопоказ HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=2344fa4304ac860f6469f03b1563b9332acefeb0
 
-#EXTINF:-1 group-title="ru" tvg-id="e926e95fd0c8b79d003d",Наша сибирь 4K [RU]
-http://192.168.1.141:6878/ace/getstream?id=e926e95fd0c8b79d003d9426e2a99f118f5e0796
-
-#EXTINF:-1 group-title="ru" tvg-id="43457f20587e5837ff55",Наше крутое HD [RU]
-http://192.168.1.141:6878/ace/getstream?id=43457f20587e5837ff55c0b46ac549dfc155103a
-
 #EXTINF:-1 group-title="ru" tvg-id="156283f58f21399fb211",Наше любимое HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=156283f58f21399fb21145d36fd43419da56bfbf
 
@@ -2540,11 +2518,11 @@ http://192.168.1.141:6878/ace/getstream?id=e42e4cd0ccef1492ada18eeda1eff220bac35
 #EXTINF:-1 group-title="ru" tvg-id="1fdaf5914ea4b80d10b1",О! [RU]
 http://192.168.1.141:6878/ace/getstream?id=1fdaf5914ea4b80d10b1053de7d740fe31f31fee
 
-#EXTINF:-1 group-title="ru" tvg-id="97173d5c881764f69627",Оружие [RU]
-http://192.168.1.141:6878/ace/getstream?id=97173d5c881764f696276b011feae5d9c8fc4491
-
 #EXTINF:-1 group-title="ru" tvg-id="da7e8d2f8d00e935946f",Остросюжетное HD [RU]
 http://192.168.1.141:6878/ace/getstream?id=da7e8d2f8d00e935946fb17a88d6eab62e7212ef
+
+#EXTINF:-1 group-title="ru" tvg-id="10cb1b48a429a04bbcdb",Охотник и Рыболов HD [RU]
+http://192.168.1.141:6878/ace/getstream?id=10cb1b48a429a04bbcdbcd75835f26062c4e41b4
 
 #EXTINF:-1 group-title="ru" tvg-id="7f68905586e70b6d2684",Поехали! [RU]
 http://192.168.1.141:6878/ace/getstream?id=7f68905586e70b6d2684f6ded8e6367365906f5c
@@ -2594,6 +2572,9 @@ http://192.168.1.141:6878/ace/getstream?id=570d51491a1e50989346ecd9d0c5cf8f3aecd
 #EXTINF:-1 group-title="ru" tvg-id="bde0b4aa0c8461fc252b",Рыжий [RU]
 http://192.168.1.141:6878/ace/getstream?id=bde0b4aa0c8461fc252b5576a31a09e644e58d48
 
+#EXTINF:-1 group-title="ru" tvg-id="c18fd62e385573b8d4c8",Сов. Секретно [RU]
+http://192.168.1.141:6878/ace/getstream?id=c18fd62e385573b8d4c8aa2cb5811a193e2befea
+
 #EXTINF:-1 group-title="ru" tvg-id="30cf0f8140006a03d60a",Спортивный [RU]
 http://192.168.1.141:6878/ace/getstream?id=30cf0f8140006a03d60a4639c623f024b4e167ed
 
@@ -2621,6 +2602,9 @@ http://192.168.1.141:6878/ace/getstream?id=ebeec408c96acce8cfea1dcb0a53397fbee77
 #EXTINF:-1 group-title="ru" tvg-id="3403267623697a7092a1",ТВ 3 [RU]
 http://192.168.1.141:6878/ace/getstream?id=3403267623697a7092a10478aad7f234f2ce4a64
 
+#EXTINF:-1 group-title="ru" tvg-id="1324b58bf20dd2dc6491",ТВ XXI [RU]
+http://192.168.1.141:6878/ace/getstream?id=1324b58bf20dd2dc6491353e6f09c5c19effb8e4
+
 #EXTINF:-1 group-title="ru" tvg-id="fab9f7a13476148dc75d",ТНТ (+7) [RU]
 http://192.168.1.141:6878/ace/getstream?id=fab9f7a13476148dc75d77ba29bf38ccf966ac81
 
@@ -2638,6 +2622,9 @@ http://192.168.1.141:6878/ace/getstream?id=8ee0c3512883fe9cd8fc597e30a4cf45631c9
 
 #EXTINF:-1 group-title="ru" tvg-id="f19a2cd4c0e4924b79d2",Уникум [RU]
 http://192.168.1.141:6878/ace/getstream?id=f19a2cd4c0e4924b79d207c39a9570bcf2620f70
+
+#EXTINF:-1 group-title="ru" tvg-id="69af62012e44a54dbe1d",Усадьба [RU]
+http://192.168.1.141:6878/ace/getstream?id=69af62012e44a54dbe1d7a330bc53d037dd7cc3e
 
 #EXTINF:-1 group-title="ru" tvg-id="ac1af534d9413abee090",Феникс Плюс Кино [RU]
 http://192.168.1.141:6878/ace/getstream?id=ac1af534d9413abee090607cd87954d964d2fd91
@@ -2667,11 +2654,6 @@ http://192.168.1.141:6878/ace/getstream?id=c221bf3411b76900211c04caaa53482ba9ea5
 
 #EXTINF:-1 group-title="ru ua" tvg-id="242485059580ade11c19",Общественное ТВ
 http://192.168.1.141:6878/ace/getstream?id=242485059580ade11c1995c96a52817341feceb7
-
-# ===== Rusia (1 canales) =====
-
-#EXTINF:-1 group-title="Rusia" tvg-id="7b7f2f4494a71b69fa1c",Porn Russian
-http://192.168.1.141:6878/ace/getstream?id=7b7f2f4494a71b69fa1c9a5ecb63964d00a1414c
 
 # ===== sa (3 canales) =====
 
@@ -3037,7 +3019,7 @@ http://192.168.1.141:6878/ace/getstream?id=54e4397a7a5319da7b78c8d0d26289645e059
 #EXTINF:-1 group-title="ukr ua" tvg-id="6a0133a649ea80a3a02f",100% News
 http://192.168.1.141:6878/ace/getstream?id=6a0133a649ea80a3a02f485075112e6c48bdc47e
 
-# ===== us (34 canales) =====
+# ===== us (36 canales) =====
 
 #EXTINF:-1 group-title="us" tvg-id="65eb0226b313a99ec889",30A Music
 http://192.168.1.141:6878/ace/getstream?id=65eb0226b313a99ec8899e107505b4938a813515
@@ -3096,6 +3078,9 @@ http://192.168.1.141:6878/ace/getstream?id=98830e3e73064a72db106f9d46e042c143176
 #EXTINF:-1 group-title="us" tvg-id="bae9b4ba3a45703b20f3",Bloomberg TV EMEA Live Event
 http://192.168.1.141:6878/ace/getstream?id=bae9b4ba3a45703b20f3853845628a8ec415e6fa
 
+#EXTINF:-1 group-title="us" tvg-id="7d71608d2a89433693ad",Bloomberg TV USA Politics Live Event
+http://192.168.1.141:6878/ace/getstream?id=7d71608d2a89433693ad285eade52a8d98efcc33
+
 #EXTINF:-1 group-title="us" tvg-id="a239fb1774191ee92169",CBS News (Opt-2)
 http://192.168.1.141:6878/ace/getstream?id=a239fb1774191ee9216941664471c6cacd3e611c
 
@@ -3132,6 +3117,9 @@ http://192.168.1.141:6878/ace/getstream?id=5f7a3c2b2f0dec01c73440689436afc15ef37
 #EXTINF:-1 group-title="us" tvg-id="42832fbf9a1d3bdcca04",NBA TV [US]
 http://192.168.1.141:6878/ace/getstream?id=42832fbf9a1d3bdcca043e09951d6769fbbe04e7
 
+#EXTINF:-1 group-title="us" tvg-id="60b6ca8c9e243a647de0",Newsmax TV
+http://192.168.1.141:6878/ace/getstream?id=60b6ca8c9e243a647de0bb2543d7d5aeea3e754f
+
 #EXTINF:-1 group-title="us" tvg-id="b8aa5f8149d17e855fd7",NOTV 41 New Orleans - LA Louisiana
 http://192.168.1.141:6878/ace/getstream?id=b8aa5f8149d17e855fd7553c83c0f0e74ea8f955
 
@@ -3151,13 +3139,19 @@ http://192.168.1.141:6878/ace/getstream?id=074f732732a1655045070746a9f10d8aefabe
 #EXTINF:-1 group-title="ve" tvg-id="96339363496f9caca06b",Promar TV
 http://192.168.1.141:6878/ace/getstream?id=96339363496f9caca06bd405b19097d2e7ddba96
 
-# ===== vn (2 canales) =====
+# ===== vn (4 canales) =====
+
+#EXTINF:-1 group-title="vn" tvg-id="f662b8a6af1f7e686d61",ANTV
+http://192.168.1.141:6878/ace/getstream?id=f662b8a6af1f7e686d61d3b32e7b3d15355e92fd
 
 #EXTINF:-1 group-title="vn" tvg-id="20bf6b96efc8b3d828e1",Cà Mau HD
 http://192.168.1.141:6878/ace/getstream?id=20bf6b96efc8b3d828e1cd70c50473acc8fa04e7
 
 #EXTINF:-1 group-title="vn" tvg-id="1debf95a43a446f3ea65",KienGiangTV
 http://192.168.1.141:6878/ace/getstream?id=1debf95a43a446f3ea655f673824b375fb77ba66
+
+#EXTINF:-1 group-title="vn" tvg-id="544c8d5e8d091d738d7d",KienGiangTV1
+http://192.168.1.141:6878/ace/getstream?id=544c8d5e8d091d738d7d60c8bcce642b6c0e593d
 
 # ===== ye (1 canales) =====
 
